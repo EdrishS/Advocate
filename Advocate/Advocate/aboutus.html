@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVOCATE SITE</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="icon" href="images/icon2.png">
+    <link rel="stylesheet" href="types.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <style>
+        .container1 {
+            position: relative;
+            width: 20%;
+            display: inline-flex;
+            margin-right: 100px;
+            margin-left: 210px;
+            vertical-align: middle;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .image1 {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .overlay1 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #717171;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            border-radius: 10px;
+        }
+
+        .container1:hover .overlay1 {
+            bottom: 0;
+            height: 100%;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .dot-container1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .head {
+            border: 1px solid black;
+            display: flex;
+            background-color: #5e564345;
+            border-radius: 10px;
+            transition: transform 0.6s;
+            justify-content: center;
+            align-items: justify;
+            padding: 10px 2px;
+            margin: 2% 35%;
+            color: rgba(200, 200, 53, 0.839);
+        }
+    </style>
+</head>
+
+<body background="images/banti.jpg">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT</a>
+        <a href="types.html">TYPES</a>
+        <a href="team.html">TEAM</a>
+    </div>
+    <nav>
+
+        <div class="logohead"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="logo1" src="images/logo (1).png" alt="" width="15%"> </span></div>
+        <div class="satyam">సత్యమేవ జయతే</div>
+        <div class="nav-wrapper">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <button class="free-consultation-button"><a href="Freecons.html" style="text-decoration: none;">Free
+                    Consultation</a></button>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="https://x.com/"><img src="images/twitter (2).png" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/login"><img src="images/linkedin-icon (2).png" alt="LinkedIn"></a>
+                        <a href="https://www.google.com/maps/@17.4292992,78.4367616,12z?entry=ttu"><img src="images/map.png" alt="Map"></a>
+                    </div>
+        </div>
+    </nav>
+    <div class="header5">
+        <h2><b><i>" !! Section and It Acts !! "</i></b></h2>
+        <pre>
+            <li>Section 10,Act of 1869 Hindu Marriage act.</li>
+            <li>Section 17,Act of 2009 Free and Compulsory Education Act.</li>
+            <li>Section 80 of IPC,Act of 1860 Lawful act in a lawful manner.</li>
+            <li>Section 304A,Act of 1956 Indian Medical C oucil Act.</li>
+            <li>Section 7(1),Act of 1984 Dispuits to related to marriage and family affairs</li>
+        </pre>
+        <div id="navbar">
+        </div>
+        <h2 class="head"> Case Studies & Expert At </h2>
+    </div>
+    <!-- Sliders Code -->
+    <div class="slider">
+        <div class="container1">
+            <img src="images/Divorce.jpg" alt="Slide 1" class="image1" height="300">
+            <div class="overlay1">
+                <div class="text">
+                    <h2> Divorce Law </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <img src="images/Education.jpeg" alt="Slide 2" class="image1" height="300">
+            <div class="overlay1">
+                <div class="text">
+                    <h2>Education Law</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <img src="images/family1.jpg" alt="Slide 3" class="image1" height="300">
+            <div class="overlay1">
+                <div class="text">
+                    <h2> Family Law</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <img src="images/RealEst.jpeg" alt="Slide 4" class="image1" height="300">
+            <div class="overlay1">
+                <div class="text">
+                    <h2>RealEstate Law</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dot navigation -->
+    <div class="dot-container1">
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="content">
+        <div class="container2" id="image-container">
+            <div class="category-box">
+                <img src="images/02.jpeg" alt="Logo" class="logo">
+                Criminal<span class="arrow"><button> <a href="Criminal.html"
+                            style="text-decoration: none;">→</a></button></span>
+            </div>
+            <div class="category-box">
+                <img src="images/Business.jpeg" alt="Logo" class="logo">
+                Business<span class="arrow"><button> <a href="Business.html"
+                            style="text-decoration: none;">→</a></button></span>
+            </div>
+            <div class="category-box">
+                <img src="images/o1.jpeg" alt="Logo" class="logo">
+                Family<span class="arrow"><button> <a href="family.html"
+                            style="text-decoration: none;">→</a></button></span>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="logo-section">
+                    <div class="logo"><img src="images/logo (1).png" alt="" width="50%"></div>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="types.html">Types</a></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="number">Number</label>
+                                <input type="text" id="number" name="number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+            // Slider's script 
+            let slides = document.getElementsByClassName("container1");
+            let dots = document.getElementsByClassName("dot");
+            let slideIndex = 0;
+
+
+            showSlide(slideIndex);
+
+
+            function showSlide(n) {
+
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                // Remove active class from all dots
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                // Determine which slides to show
+                let firstSlideIndex = n * 2;
+                let secondSlideIndex = firstSlideIndex + 1;
+
+                // Display the selected slides
+                slides[firstSlideIndex].style.display = "inline-block";
+                slides[secondSlideIndex].style.display = "inline-block";
+
+                // Add active class to the corresponding dot
+                dots[n].classList.add("active");
+            }
+
+            // Add click event listeners to dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].addEventListener("click", function () {
+                    showSlide(i);
+                });
+            }
+        </script>
+</body>
+
+</html>

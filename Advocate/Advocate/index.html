@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVOCATE SITE</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="icon" href="images/icon2.png">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT</a>
+        <a href="types.html">TYPES</a>
+        <a href="team.html">TEAM</a>
+      </div>
+    <nav>
+        <div class="logohead"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="logo1" src="images/logo (1).png" alt="" width="15%"></span></div>
+        <div class="satyam">సత్యమేవ జయతే</div>
+        <div class="nav-wrapper">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <button class="free-consultation-button"><a href="Freecons.html" style="text-decoration: none;">Free Consultation</a></button>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/"><img src="images/twitter (2).png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/login"><img src="images/linkedin-icon (2).png" alt="LinkedIn"></a>
+                <a href="https://maps.app.goo.gl/uD4GHR39j3fF2c1b7"><img src="images/map.png" alt="Map"></a>
+            </div>
+        </div>
+    </nav>
+    <!--Slider-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/slider6.jpg" alt="" height="500" width="100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slider7.jpg" alt="" height="500" width="100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slider3.jpeg" alt="" height="500" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/slider4.jpeg" alt="" height="500" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/slider2.jpeg" alt="" height="500" width="100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮ </a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <div class="logo"><img src="images/logo (1).png" alt=""width="50%"></div>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="types.html">Types</a></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="number">Number</label>
+                            <input type="text" id="number" name="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+/* sliders js*/
+let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+</script>
+</body>
+</html>
